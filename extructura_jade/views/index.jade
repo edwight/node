@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  -var nombre = "edwar"
+  p Welcome to #{title} my nombre es #{nombre}
+  section.envoltorio
+  ul
+  each val in [1, 2, 3, 4, 5]
+    li= val
